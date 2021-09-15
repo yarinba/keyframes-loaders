@@ -6,26 +6,26 @@
 	border: 2px solid whitesmoke;
 	transform-origin: center;
 	animation: rotate 2s ease forwards infinite;
-}
 
-.circle {
-	background-color: red;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	position: relative;
-	border: 2px solid whitesmoke;
-}
+	.circle {
+		background-color: red;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: relative;
+		border: 2px solid whitesmoke;
+	}
 
-.circle:nth-child(1) {
-	left: 100px;
-	animation: slideleft 2s ease forwards infinite;
-}
+	.circle:nth-child(1) {
+		left: 100px;
+		animation: slideleft 2s ease forwards infinite;
+	}
 
-.circle:nth-child(2) {
-	left: -100px;
-	top: -30px;
-	animation: slideright 2s ease forwards infinite;
+	.circle:nth-child(2) {
+		left: -100px;
+		top: -30px;
+		animation: slideright 2s ease forwards infinite;
+	}
 }
 
 @keyframes rotate {

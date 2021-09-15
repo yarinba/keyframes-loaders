@@ -1,2 +1,47 @@
+/* colors */
+$clr-light: #ffb300;
+$clr-med: #e53935;
+$clr-dark: #d81b60;
+
 .loader2-container {
+	.dot {
+		height: 1.3rem;
+		width: 1.3rem;
+		border-radius: 1.3rem;
+		background-color: $clr-med;
+		display: inline-block;
+		margin: 0.5rem;
+		vertical-align: middle;
+		animation: load 6s cubic-bezier(0.76, 0, 0.24, 1.12) infinite;
+	}
+}
+
+@keyframes load {
+	0%,
+	100% {
+		height: 1.3rem;
+		background-color: $clr-light;
+	}
+	20% {
+		height: 7rem;
+	}
+	40% {
+		height: 1.3rem;
+	}
+	50% {
+		height: 1.3rem;
+		background-color: $clr-dark;
+	}
+	70% {
+		height: 8rem;
+	}
+	90% {
+		height: 1.3rem;
+	}
+}
+
+@for $i from 1 through 5 {
+	.dot:nth-child(#{$i}) {
+		animation-delay: #{$i * 0.15}s;
+	}
 }

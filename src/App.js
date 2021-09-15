@@ -1,5 +1,6 @@
 import './App.scss';
 import Loader1 from './LoadersComponents/Loader1';
+import Loader2 from './LoadersComponents/Loader2';
 
 const App = () => {
 	return (
@@ -7,7 +8,7 @@ const App = () => {
 			<p>
 				Edit <code>src/App.js</code> and save to reload.
 			</p>
-			<Loader1 />
+			<Loader2 />
 			<p>
 				Edit <code>src/App.js</code> and save to reload.
 			</p>
