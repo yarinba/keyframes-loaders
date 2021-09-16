@@ -1,0 +1,37 @@
+.loader4-container {
+    .dot {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #420516;
+        display: inline-block;
+        margin: .5rem;
+        transform: scale(0.2);
+        animation: fade-load 2.5s ease-in-out infinite;
+    }
+
+}
+
+@keyframes fade-load {
+    0%, 100%{
+        transform: scale(0.2);
+        background-color: #420516;
+    }
+    25% {
+        background-color: #7D1935;
+    }
+    50% {
+        transform: scale(1);
+        background-color: #B42B51;
+
+    }
+    75% {
+        background-color: #E63E6D;
+    }
+}
+
+@for $i from 1 through 5 {
+    .dot:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.2s};
+    }
+}

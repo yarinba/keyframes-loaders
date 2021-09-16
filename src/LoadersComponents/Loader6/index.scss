@@ -1,0 +1,44 @@
+.loader6-container {
+    .col:nth-child(1) {
+        background-color: #DC5B6E;
+    }
+    .col:nth-child(2) {
+        background-color: #F19748;
+    }
+    .col:nth-child(3) {
+        background-color: #EAD04B;
+    }
+    .col:nth-child(4) {
+        background-color: #55A973;
+    }
+    .col:nth-child(5) {
+        background-color: #2D8FB6;
+    }
+    .col:nth-child(6) {
+        background-color: #6A54B4;
+    }
+
+    .col {
+        width: 10px;
+        height: 50px;
+        margin: 1px;
+        display: inline-block;
+        animation: bigger 1s ease-in-out infinite;
+        transform: scaleY(0.05);
+    }
+}
+
+@keyframes bigger {
+    0%, 60%, 100% {
+        transform: scaleY(0.05);
+    }
+    35% {
+        transform: scaleY(1);
+    }
+}
+
+@for $i from 1 through 6 {
+    .col:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.08s};
+    }
+}

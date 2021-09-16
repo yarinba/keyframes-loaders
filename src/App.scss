@@ -3,6 +3,9 @@
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
+}
+
+.loader-container {
+	position: absolute;
 }

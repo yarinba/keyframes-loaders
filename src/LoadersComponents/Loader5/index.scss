@@ -1,0 +1,37 @@
+.loader5-container {
+    .base-line {
+        height: 20px;
+        width: 300px;
+        background-color: rgba($color: #669999, $alpha: 0.3);
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .line {
+        height: 20px;
+        width: 50px;
+        background-color: #295F4E;
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-300%, -50%);
+        animation: load-bar 1.5s ease-in-out alternate infinite;
+    }
+}
+
+@keyframes load-bar {
+    0% {
+        transform: translate(-300%, -50%);
+    }
+    50% {
+        background-color: #80ED99;
+        width: 70px;
+    }
+    100% {
+        transform: translate(200%, -50%);
+    }
+}

@@ -1,0 +1,42 @@
+$u: 1.25;
+$p: .5em;
+$o: 1.25em;
+$l: 6px;
+$he: 8em;
+$wi: 30em;
+
+.head {
+    margin-top: $p;
+
+    article {
+        --color: #{mix(#fff, rgb(177, 147, 110), 25%)};
+        --s0: calc(#{$o} + #{$l});
+        --s1: calc(#{$o} + #{$l} + #{$p});
+        place-self: center;
+        position: relative;
+        width: $wi; height: $he;
+        border: solid 0 transparent;
+        border-width: 0 var(--s0) var(--s0) 0;
+        padding: var(--s1) $p $p var(--s1);
+        background: var(--color) padding-box;
+        
+        
+        &::before {
+            position: absolute;
+            top: 0; left: 0;
+            border: inherit;
+            border-width: $o 0 0 $o;
+            width: $wi; height: $he;
+            box-shadow: inset 0 0 0 $l var(--color);
+            mix-blend-mode: difference;
+            pointer-events: none;
+            content: ''
+        }
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        font-weight: 900;
+        line-height: 1.75
+    }
+}
