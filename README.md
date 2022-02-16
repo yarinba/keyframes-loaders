@@ -3,6 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). \
 simple one-page website with examples of loaders using only pure css/scss with @keyframes.
 
+Demo: https://loaders-playground.netlify.app
+
 ## Installation and Usage
 
 - Clone this repo in your terminal
@@ -10,7 +12,7 @@ simple one-page website with examples of loaders using only pure css/scss with @
 - run `npm install` in your terminal
 - run `npm start` in your terminal app will run locally on port: 3000
 
-Note: Node.js and NPM (Node Package Manager) is required to install and run the server.
+Note: Node.js and NPM (Node Package Manager) is required to install and run.
 
 ## Available Scripts
 
